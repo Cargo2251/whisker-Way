@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.title-container {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.logo-container {
+    position: absolute; /* Position the logo absolutely */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+}
+
+.logo-container img {
+    max-width: 100px; /* Set max width of the logo */
+}
+
+.sideways-div {
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    background-color: #4CAF50; /* Green */
+    margin: 0 10px; /* Adjust margin as needed */
+}
