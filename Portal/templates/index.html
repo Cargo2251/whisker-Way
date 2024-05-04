@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiskerWay</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='caticon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>WhiskerWay</h1>
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='catlogo.png') }}" alt="Logo">
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-container">
+            <h1>Activity Logs</h1>
+            <h3>Here is where you can check all your activity that your cat flap has recorded!</h3>
+            <table id="data-table">
+                <tr>
+                    <th>ID</th>
+                    <th>Activity</th>
+                    <th>Timestamp</th>
+                </tr>
+                {% for item in data %}
+                <tr>
+                    <td>{{ item.ID }}</td>
+                    <td>{{ item.Activity }}</td>
+                    <td>{{ item.Timestamp }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</body>
+</html>
